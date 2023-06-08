@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main id="main-doc">
+
+
+
+    <header>
+      <h1 class="header_h1">HTML tags</h1>
+
+
+      <p class="header_p">
+        Now I will show you some HTML tags
+      </p>
+
+      <nav id="navbar">
+        <header class="header_nav"> Section</header>
+        <ul class="header_ul">
+          <li><a href="#div" class="nav-link">div</a></li>
+          <li><a href="#img" class="nav-link">img</a></li>
+          <li><a href="#a" class="nav-link">a</a></li>
+          <li><a href="#input" class="nav-link">input</a></li>
+          <li><a href="#strong" class="nav-link">strong</a></li>
+        </ul>
+
+      </nav>
+    </header>
+    <section id="div" class="main-section">
+      <header class="section_header section_div">
+        <h2>
+          div 
+        </h2>
+      </header>
+      <p>
+        The HTML Content Separation element <code>(&lt;div&gt)</code> is a universal container for streaming
+        content. It
+        doesn't affect the content or layout until it is styled using CSS.
+
+      </p>
+
+
+      <h3>Note</h3>
+      <ul class="section_ul">
+        <li>The element &lt;div&gt should only be used if no other semantic element (such as
+          <code>&lt;article&gt</code> or <code>&lt;nav&gt</code>) is used . This doesn't fit.
+        </li>
+      </ul>
+    </section>
+
+    <h2 class="example">Example</h2>
+    <div class="code_example">
+      
+        <pre>
+            <code>
+&lt;div&gt
+  &lt;p&gt
+    Any type of content. For example, &lt;p&gt;, &lt;table&gt;. 
+    Anything!
+  &lt;/p&gt
+&lt;/div&gt      
+            </code>    
+          </pre>
+      
+    </div>
+
+    <section id="img" class="main-section">
+      <header class="section_header">
+        <h2>img</h2>
+      </header>
+      <p>
+        The &lt;img&gt HTML element embeds an image into the document.
+
+      </p>
+      <p>
+        The above example shows usage of the &lt;img&gt element:
+
+      </p>
+      <ul>
+        <li>The src attribute is required, and contains the path to the image you want to embed.</li>
+        <li>The alt attribute holds a text description of the image, which isn't mandatory but is incredibly useful
+          for accessibility — screen readers read this description out to their users so they know what the image
+          means. Alt text is also displayed on the page if the image can't be loaded for some reason: for example,
+          network errors, content blocking, or linkrot.</li>
+      </ul>
+      <h2>Example</h2>
+      <p>The following example embeds an image into the page and includes alternative text for accessibility.
+
+      </p>
+      <div class="code_example">
+
+        <pre>
+              <code>
+&lt;img src="https://mobimg.b-cdn.net/v3/fetch/2e/2ed552bdb4a
+00b0524e61ff725e811d3.jpeg" alt="elephan" /&gt
+              </code>
+            </pre>
+      </div>
+    </section>
+    <section id="a" class="main-section">
+      <header class="section_header">
+        <h2>a</h2>
+
+      </header>
+      <p>The &lt;a&gt HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages,
+        files, email addresses, locations in the same page, or anything else a URL can address.
+
+      </p>
+      <p>Content within each &lt;a&gt should indicate the link's destination. If the href attribute is present,
+        pressing the enter key while focused on the &lt;a&gt element will activate it.
+
+      </p>
+      <h2>About href</h2>
+      <p>The URL that the hyperlink points to. Links are not restricted to HTTP-based URLs — they can use any URL
+        scheme supported by browsers:
+
+      </p>
+      <ul class="section_ul">
+        <li>Sections of a page with document fragments
+        </li>
+        <li>Specific text portions with text fragments
+        </li>
+        <li>Pieces of media files with media fragments
+        </li>
+        <li>Telephone numbers with <code>tel:</code> URLs
+        </li>
+        <li>Email addresses with <code>mailto:</code> URLs
+        </li>
+        <li>While web browsers may not support other URL schemes, websites can with registerProtocolHandler()
+        </li>
+      </ul>
+      <h2>Example</h2>
+      <p>Linking to an absolute URL</p>
+      <div class="code_example">
+        <pre>
+            <code>
+&lt;a href="https://www.mozilla.com"&gt Mozilla &lt;/a&gt
+            </code>
+          </pre>
+      </div>
+    </section>
+    <section id="input" class="main-section">
+      <header class="section_header">
+        <h2>input</h2>
+      </header>
+      <p>The &lt;input&gt HTML element is used to create interactive controls for web-based forms in order to accept
+        data from the user; a wide variety of types of input data and control widgets are available, depending on
+        the
+        device and user agent. The &lt;input&gt element is one of the most powerful and complex in all of HTML due
+        to
+        the sheer number of combinations of input types and attributes.
+
+      </p>
+      <div class="code_example">
+        <pre>
+
+            <code>
+&lt;label for="name"&gtName (4 to 8 characters):&lt;/label&gt
+&lt;input type="text" id="name" name="name" required
+minlength="4" maxlength="8" size="10"&gt
+              </code>
+          </pre>
+      </div>
+
+    </section>
+    <section id="strong" class="main-section">
+      <header class="section_header">
+        <h2>strong</h2>
+
+      </header>
+      <p>The &lt;strong&gt HTML element indicates that its contents have strong importance, seriousness, or urgency.
+        Browsers typically render the contents in bold type.
+
+      </p>
+      <h2>Example</h2>
+      <div class="code_example">
+        <pre>
+              <code>
+&lt;p&gt
+ Before proceeding, &lt;strong&gtmake sure you put on your safety goggles&lt;/strong&gt.
+&lt;/p&gt                
+              </code>
+            </pre>
+      </div>
+    </section>
+  </main>
+</body>
